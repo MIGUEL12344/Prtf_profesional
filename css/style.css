@@ -12,6 +12,10 @@ img{
     filter: invert(1);
     transform: translateX(10px);
 }
+.menu-btn{
+  display: none;
+}
+
 
 .header{
     position: fixed;
@@ -34,7 +38,7 @@ img{
  .navbar ul {
     display: flex;
     justify-content: space-between;
-    gap: 60px;
+    gap: 90px;
  }
 
  .navbar ul li {
@@ -183,3 +187,210 @@ img{
    transform-origin: center;
    border: none;
  }
+
+ /*seccion de pie de pagina*/
+
+.enlaces{
+  margin-top: 5%;
+  display: flex;
+  gap: 40%;
+  justify-content: center;
+ }
+
+.contactanos h3{
+  font-size: larger;
+  text-shadow: 0px 0px 20px red;
+  transform: translateX(10%);
+  cursor: pointer;
+ }
+
+.contactanos ul li{
+  list-style: none;
+ }
+
+.contactanos ul li a{
+   text-decoration: none;
+ }
+
+.ayuda{
+  text-align: center;
+ }
+
+.ayuda h3{
+  text-shadow: 0px 0px 20px red;
+  transform: translateX(20%);
+  cursor: pointer;
+ }
+
+.ayuda ul li{
+  list-style: none;
+ }
+
+.ayuda ul li a{
+   text-decoration: none;
+ }
+
+/*responsiv home*/
+
+ @media (max-width: 768px) {
+  .home {
+    margin-top: 20%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    height: auto;
+    padding: 20px;
+  }
+
+  .datos {
+    width: 90%;
+    max-width: 400px;
+    transform: none; 
+    padding: 15px;
+  }
+
+  .datos h2 {
+    font-size: 2rem;
+    text-shadow: 0px 0px 5px rgb(0, 39, 211);
+  }
+
+  .avatar {
+    transform: none; 
+    display: flex;
+    justify-content: center; 
+  }
+
+  .avatar img {
+    width: 60%; 
+    max-width: 250px;
+    border: 2px solid green;
+  }
+}
+
+@media (max-width: 480px) { 
+  .datos h2 {
+    font-size: 1.8rem;
+  }
+
+  .avatar img {
+    width: 50%; 
+    max-width: 200px;
+  }
+}
+
+/* responsiv proyectos*/
+
+@media (max-width: 768px) {
+  .proyectos {
+    height: auto; 
+    padding: 40px 20px;
+  }
+
+  .proyectos h2 {
+    font-size: 1.8rem;/
+  }
+
+  .contenedor-tarjetas {
+    grid-template-columns: repeat(2, 150px); 
+    max-width: 90%;
+    padding: 20px; 
+    gap: 15px; 
+  }
+
+  .tarjeta {
+    width: 150px;
+    max-height: 250px;
+    border-radius: 8%; 
+  }
+
+  .tarjeta img {
+    max-width: 80px;
+    max-height: 80px;
+    transform: none;
+  }
+
+  .tarjeta button {
+    transform: none;
+    font-size: 14px; 
+  }
+
+  .tarjeta button:hover {
+    transform: scale(1.2);
+  }
+  .ayuda{
+    transform: translateX(-60%);
+  }
+
+}
+
+
+@media (max-width: 480px) {
+  .contenedor-tarjetas {
+    grid-template-columns: repeat(1, 200px);
+  }
+
+  .tarjeta {
+    width: 180px;
+    max-height: 220px;
+  }
+
+  .tarjeta img {
+    max-width: 70px;
+    max-height: 70px;
+  }
+}
+
+/* seccion navbar */
+
+@media (max-width: 768px) {
+    .navbar {
+      display: flex;
+        align-items: flex-start;
+    }
+
+    .menu-navbar {
+        position: fixed;
+        left: -100%;
+        width: 170px;
+        display: flex;
+        flex-direction: column;
+        transition: left 0.3s ease-in-out; 
+        margin-top: 30%;
+    }
+
+    /* Mostrar el menú cuando esté activo */
+    .menu-navbar.active {
+        left: 0;
+    }
+    .menu-navbar li {
+      display: flex;
+        list-style: none;
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+        transition: color 0.3s;
+        margin-top: -25%;
+    }
+
+    .menu-navbar li:hover {
+        color: aqua;
+    }
+
+    /* Estilos del botón hamburguesa */
+    .menu-btn {
+      display: flex;
+        width: 40px;
+        cursor: pointer;
+        top: 15px;
+        left: 15px;
+        z-index: 200;
+    }
+    .btn {
+        display: none;
+    }
+
+    .navbar img {
+      display: none;
+    }
+}
