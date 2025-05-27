@@ -330,6 +330,10 @@ img{
     grid-template-columns: repeat(1, 200px);
   }
 
+  .navbar img {
+      display: none;
+    }
+    
   .tarjeta {
     width: 180px;
     max-height: 220px;
@@ -395,21 +399,3 @@ img{
       display: none;
     }
 }
-
-@media (max-width: 480px) {
-  .navbar img {
-      display: none;
-    }
-  .menu-btn {
-      display: flex;
-        width: 40px;
-        cursor: pointer;
-        top: 15px;
-        left: 15px;
-        z-index: 200;
-    }
-    .btn {
-        display: none;
-    }
-}
-
