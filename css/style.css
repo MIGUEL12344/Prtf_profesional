@@ -381,7 +381,7 @@ img{
     /* Estilos del botón hamburguesa */
     .menu-btn {
       display: flex;
-      width: 30px;
+      width: 50px;
       cursor: pointer;
       top: 15px;
       left: 15px;
@@ -392,6 +392,9 @@ img{
     }
 
     .navbar img {
-      display: none;
+    display: none !important;
+    visibility: hidden;
+    opacity: 0;
     }
+
 }
