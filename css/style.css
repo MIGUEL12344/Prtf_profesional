@@ -409,7 +409,13 @@ img{
     }
 
     .navbar img {
-    display: none;
+      display: none;
     }
+
+    .autor p{
+      font-size: 10px;
+      color: aqua;
+    }
+
 
 }
