@@ -375,6 +375,7 @@ img{
 
     .menu-navbar li:hover {
         color: aqua;
+        cursor: pointer;
     }
 
     /* Estilos del botón hamburguesa */
@@ -394,3 +395,10 @@ img{
       display: none;
     }
 }
+
+@media (max-width: 480px) {
+  .navbar img {
+      display: none;
+    }
+}
+
