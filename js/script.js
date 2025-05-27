@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     const menuBtn = document.createElement("img"); // Crear botón hamburguesa
-    menuBtn.src = "../assets/menu.png"; // Icono del menú
+    menuBtn.src = "./assets/menu.png"; // Icono del menú
     menuBtn.alt = "Menú";
     menuBtn.classList.add("menu-btn");
     document.querySelector(".header").appendChild(menuBtn); // Agregar al header
