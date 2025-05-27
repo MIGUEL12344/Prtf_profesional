@@ -381,11 +381,11 @@ img{
     /* Estilos del botón hamburguesa */
     .menu-btn {
       display: flex;
-        width: 40px;
-        cursor: pointer;
-        top: 15px;
-        left: 15px;
-        z-index: 200;
+      width: 30px;
+      cursor: pointer;
+      top: 15px;
+      left: 15px;
+      z-index: 200;
     }
     .btn {
         display: none;
