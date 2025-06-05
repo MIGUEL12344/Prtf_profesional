@@ -89,18 +89,23 @@ img{
    max-width: 500px;
    text-align: center;
    padding: 10px;
-   transform: translate(-170px, -10px);
+   transform: translate(-15em, -10px);
  }
  
  
  .datos h2 {
-   font-size: 3rem;
+   font-size: 4rem;
    text-shadow: 0px 0px 10px rgb(0, 39, 211);
  }
+
+ .datos p{
+  font-size: 20px;
+ }
+
  .avatar { 
    display: inline-block;
    width: fit-content;
-   transform: translate(60px, 30px);
+   transform: translate(15em, 0em);
  }
 
  .avatar img {
@@ -209,10 +214,13 @@ img{
 .redes a {
     color: #e2d8d8;
     font-size: 30px;
-    margin-left: 10px;
+    margin-left: 1em;
     text-decoration: none;
 }
 
+.redes{
+  transform: translateX(-2em);
+}
 
 .contactanos h3{
   font-size: larger;
